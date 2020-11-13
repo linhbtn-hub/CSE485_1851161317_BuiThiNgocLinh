@@ -1,0 +1,22 @@
+<!-- BEGIN:LISTING -->
+    <br>
+    <a class="btn btn-success" href="?m=categories&a=add"> <i class="fa fa-plus"></i> Add New Category</a>
+
+<table border=1 style="width: 100%;">
+    <tr class="text-center">
+        <th>Number</th>
+        <th>ID</th>
+        <th>Category Name</th>
+        <th colspan=2>Action</th>
+    </tr>
+    <!-- BEGIN:LS -->
+    <tr>
+        <td>{LS.nbr}</td>
+        <td>{LS.id}</td>
+        <td>{LS.cat_name}</td>
+        <td><a href="?m=categories&a=edit&id={LS.id}">Edit</a></td>
+        <td><a href="javascript:void(0)" onclick='onDelete("categories","delete","{LS.id}")'>Delete</a></td>
+    </tr>
+    <!-- END:LS -->
+</table>
+<!-- END:LISTING -->

@@ -1,0 +1,39 @@
+<!-- BEGIN: ADD -->
+    <form method="POST" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td>Category</td>
+                <td>
+                    {listCategory}
+                    <span id='mesError' style="color:red">{mes2}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Product Name</td>
+                <td>    
+                    <input type="text" name='txtProName' value='{ADD.pro_name}'>
+                    <span id='mesError' style="color:red">{mess_proName}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Price</td>
+                <td>
+                    <input type="text" value='{ADD.pro_price}' name='txtProPrice'>
+                    <span id='mesError' style="color:red">{mess_proPrice}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Product Image</td>
+                <td>
+                    <input type="file" name='txtProFile'>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button>Save</button>
+                    <td><input type="reset" value='Reset'></td>
+                </td>
+            </tr>
+        </table>
+    </form>
+<!-- END: ADD -->

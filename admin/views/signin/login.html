@@ -1,0 +1,40 @@
+<!-- BEGIN: LOGIN -->
+<h1 style="color: red"><center>LOGIN</center></h1>
+<form method="POST" name='frmLogin' style="margin-left: 500px; margin-top: 100px;">
+    <table>
+        <tr>
+            <td>User Name</td>
+            <td><input type="text" name='txtUserName' placeholder='Enter your userName'></td>
+        </tr>
+        <tr>
+            <td>Pass word</td>
+            <td>
+                <input type="password" name='txtPwd' placeholder='Enter your Pass word'>
+                <span style='color:red'>{err_login}</span>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="submit" value='Login' name='btnSubmit'></td>
+            <td><a href="{baseUrl}/admin/signup.php">Sign up</a></td>
+        </tr>
+    </table>
+</form>
+<!-- <script>
+        var f = document.frmLogin;
+        var btn = f.btnSubmit;
+        var flag = 'YES';
+        btn.addEventListener('click',function(){
+            let userName = f.txtUserName.value;
+            let pwd = f.txtPwd.value;
+            if(pwd == ''){
+                flag = 'NO';
+            }
+            if(userName==''){
+                flag = 'NO';
+            }
+            if(flag=='YES'){
+                f.submit();
+            }
+        });
+    </script> -->
+<!-- END: LOGIN -->

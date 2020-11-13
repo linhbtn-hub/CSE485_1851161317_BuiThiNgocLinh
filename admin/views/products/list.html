@@ -1,0 +1,28 @@
+<!-- BEGIN:LISTING -->
+<br>
+<a class="btn btn-success" href="?m=products&a=add"> <i class="fa fa-plus"></i> Add New Product</a>
+
+<table border=1 style="width: 100%;">
+    <tr class="text-center">
+        <th>Number</th>
+        <th>Product Name</th>
+        <th>Code</th>
+        <th>Price</th>
+        <th>Category Name</th>
+        <th>Image</th>
+        <th colspan=2>Action</th>
+    </tr>
+    <!-- BEGIN:LS -->
+    <tr>
+        <td>{LS.nbr}</td>
+        <td>{LS.pro_name}</td>
+        <td>{LS.pro_code}</td>
+        <td>{LS.pro_price}</td>
+        <td>{LS.cat_name}</td>
+        <td><img src="{LS.pro_img}" width="100px" height="100px" /></td>
+        <td><a href="?m=products&a=edit&id={LS.id}">Edit</a></td>
+        <td><a href="javascript:void(0)" onclick='onDelete("products","delete","{LS.id}")'>Delete</a></td>
+    </tr>
+    <!-- END:LS -->
+</table>
+<!-- END:LISTING -->

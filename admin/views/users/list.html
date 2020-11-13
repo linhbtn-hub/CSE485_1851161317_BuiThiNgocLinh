@@ -1,0 +1,24 @@
+<!-- BEGIN:LISTING -->
+<br>
+<a class="btn btn-success" href="?m=products&a=add"> <i class="fa fa-plus"></i> Add New Account</a>
+
+<table border=1 style="width: 100%;">
+    <tr class="text-center">
+        <th>Number</th>
+        <th>ID</th>
+        <th>User</th>
+        <th>Password</th>
+        <th colspan=2>Action</th>
+    </tr>
+    <!-- BEGIN:LS -->
+    <tr>
+        <td>{LS.nbr}</td>
+        <td>{LS.id}</td>
+        <td>{LS.user_name}</td>
+        <td>{LS.user_pwd}</td>
+        <td><a href="?m=users&a=edit&id={LS.id}">Edit</a></td>
+        <td><a href="javascript:void(0)" onclick='onDelete("users","delete","{LS.id}")'>Delete</a></td>
+    </tr>
+    <!-- END:LS -->
+</table>
+<!-- END:LISTING -->

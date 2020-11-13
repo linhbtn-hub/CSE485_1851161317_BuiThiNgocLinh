@@ -1,0 +1,37 @@
+<!-- BEGIN: SIGNUP -->
+<h1 style="color: red"><center>SIGN UP</center></h1>
+    <form method="POST" enctype='multipart/form-data' name='frmSign' style="margin-left: 500px; margin-top: 100px;">
+        <table>
+            <tr>
+                <td>User Name</td>
+                <td>
+                    <input type="text" name='txtUsersName' placeholder="Enter User Name">
+                    <span style='color:red'>{er_1}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>
+                    <input type="password" name='pwd' placeholder="Enter password">
+                    <span style='color:red'>{er}</span>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" name='btnSign' value='Sign up'></td>
+                <td><span>You have Account? Click here to </span><a href="{baseUrl}/admin/login.php">Login</a></td>
+            </tr>
+        </table>
+    </form>
+    <!-- <script>
+        var s = document.frmSign;
+        var btn = s.btnSign;
+        var flag = 'YES';
+        btn.addEventListener('click',function(){
+            let s1 = s.txtUsersName.value;
+            let s2 = s.pwd.value;
+            if(s1=='') flag='NO';
+            if(s2=='') flag='NO';
+            if(flag=='YES') s.submit();
+        });
+    </script> -->
+<!-- END: SIGNUP -->
