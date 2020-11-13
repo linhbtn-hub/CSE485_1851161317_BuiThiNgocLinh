@@ -17,6 +17,6 @@
 		$axtp->assign('baseUrl',$baseUrl);
 		$axtp->parse("LAYOUT");
 		$axtp->out("LAYOUT");
-		$axtp->out("LAYOUT");
+		
 	}
 	
