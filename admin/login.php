@@ -16,6 +16,7 @@
                 $flag=1;
                 break;
             }
+            if($flag==0)
         }
         if($flag==0){
             $xtp->assign('err_login','UserName or Password invalid!');
